@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- Google Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Figtree", sans-serif;
+      }
+      body {
+        background-color: #f0f0f0;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .main {
+        width: 1400px;
+        height: 650px;
+        position: relative;
+        top: 35px;
+        margin: 0 auto;
+        background-color: #f6d050;
+      }
+
+      .card {
+        width: 385px;
+        height: 550px;
+        background-color: #f0f0f0;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 8px 8px black;
+      }
+
+      .image {
+        padding: 25px;
+      }
+
+      .image > img {
+        border-radius: 10px;
+      }
+      .button {
+        padding-left: 25px;
+      }
+      .button > p {
+        display: inline;
+        padding: 5px 15px;
+        border: 1px transparent;
+        border-radius: 5px;
+        background-color: #f6d050;
+        font-family: "Figtree", sans-serif;
+        font-weight: bolder;
+      }
+
+      .Date {
+        padding-left: 25px;
+        padding-top: 10px;
+      }
+
+      .head {
+        font-size: 12px;
+        padding-left: 25px;
+      }
+
+      .paragraph {
+        padding-left: 25px;
+        font-size: 16px;
+        opacity: 0.5;
+      }
+
+      .author {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .author-image {
+        transform: scale(0.6);
+      }
+
+      .author-name {
+        font-weight: bold;
+      }
+
+      @media only screen and (max-width: 375px) {
+        .main {
+          width: 375px;
+        }
+          
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abrar Ahsan</a>.
+    </div>
+    <div class="area">
+      <div class="main">
+        <div class="card">
+          <div class="image">
+            <img src=".//assets/images/illustration-article.svg" alt="" />
+          </div>
+          <div class="button">
+            <p>Learning</p>
+          </div>
+          <div class="Date">
+            <p>Published 21 Dec 2023</p>
+          </div>
+          <div class="head">
+            <h1>HTML & CSS foundations</h1>
+          </div>
+          <div class="paragraph">
+            <p>
+              These languages are the backbone of every website, defining
+              structure, content, and presentation.
+            </p>
+          </div>
+          <div class="author">
+            <div class="author-image">
+              <img src=".//assets/images/image-avatar.webp" alt="" />
+            </div>
+            <div class="author-name">Greg Hooper</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
